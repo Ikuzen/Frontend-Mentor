@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 375px) {
+  body {
+    max-width: 375px;
+  }
+  body div.card {
+    background-color: #1b1938;
+    margin: 20px;
+  }
+  body div.card .card-image {
+    position: relative;
+  }
+  body div.card .card-image .card-image-insert {
+    content: url("./images/image-header-mobile.jpg");
+    max-width: -webkit-fill-available;
+    z-index: -1;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  body div.card .card-image::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 99%;
+    background-color: rgba(162, 0, 250, 0.5);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  body div.card .card-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  body div.card .card-text h1.header-paragraph {
+    font-size: 30px;
+    font-family: "Lexend Deca", sans-serif;
+    color: white;
+    text-align: -webkit-center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  body div.card .card-text h1.header-paragraph span.highlight-word {
+    color: #aa5cdb;
+    display: contents;
+  }
+  body div.card .card-text div.main-paragraph {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Inter", sans-serif;
+    text-align: -webkit-center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  body div.card .card-text div.bottom-paragraph {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Inter", sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+  }
+  body div.card .card-text div.bottom-paragraph div.paragraph-number {
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+  body div.card .card-text div.bottom-paragraph div.paragraph-name {
+    font-size: 10px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 1440px) {
+  body div.card {
+    background-color: #1b1938;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  body div.card .card-image {
+    position: relative;
+  }
+  body div.card .card-image .card-image-insert {
+    content: url("./images/image-header-mobile.jpg");
+    z-index: -1;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100%;
+    width: 100%;
+  }
+  body div.card .card-image::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(162, 0, 250, 0.5);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  body div.card .card-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  body div.card .card-text h1.header-paragraph {
+    font-size: 30px;
+    font-family: "Lexend Deca", sans-serif;
+    color: white;
+    text-align: -webkit-center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  body div.card .card-text h1.header-paragraph span.highlight-word {
+    color: #aa5cdb;
+    display: contents;
+  }
+  body div.card .card-text div.main-paragraph {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Inter", sans-serif;
+    text-align: -webkit-center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  body div.card .card-text div.bottom-paragraph {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Inter", sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+  }
+  body div.card .card-text div.bottom-paragraph div.paragraph-number {
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+  body div.card .card-text div.bottom-paragraph div.paragraph-name {
+    font-size: 10px;
+    padding-bottom: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
